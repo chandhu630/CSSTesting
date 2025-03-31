@@ -1,0 +1,255 @@
+.btn-enquiry {
+    background: transparent;
+    box-shadow: none;
+    font-weight: 500;
+    padding: 13px 40px;
+    margin: 0 auto;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+}
+.btn-enquiry:hover {
+    background-color: var(--secondary-color);
+}
+
+.button-btn {
+    background: transparent;
+    box-shadow: none;
+    font-weight: 400;
+    padding: 13px 40px;
+    max-width: 150px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+
+    border: none;
+}
+.button-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.Fields_Flex
+{
+    display: flex;
+    flex-direction: column;
+}
+.fields
+{
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    color: black;
+    border-bottom: 1px solid gray;
+    /* transition: border-bottom 0.3s ease; */
+    outline: none; 
+}
+.fields:focus {
+    border-bottom: 1px solid orange;
+}
+
+/* smooth transition*/
+.helloContainer {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .helloText {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height:2; /* Remove extra space */
+  }
+  
+  .helloHover {
+    width: 50%;
+    height: 2px;
+    background-color: orange;
+    border: none;
+    margin: 0;
+    display: block;
+    transition: width 0.5s ease;
+  }
+  
+  .helloContainer:hover .helloHover {
+    width: 100%;
+  }
+  h2{
+    color: var(--primary-color);
+  }
+
+.fields_message
+{
+    padding: 10px;
+    height: 70px;
+    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none; 
+    margin-bottom: 60px;
+}
+.fields::placeholder {
+    color: #212529;
+    opacity: 1;
+}
+.fields_message::placeholder
+{
+    color: #212529;
+}
+
+.letter_india
+{
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    font-weight: bold;
+
+}
+h6{
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.address-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .address-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .secondContact
+  {
+    padding-top: 70px;
+    width:50%;
+  }
+  .underLineContact:hover
+  {
+    text-decoration: underline;
+
+  }
+  .mainContact
+  {
+    display: flex;
+    width: 90%;
+ 
+  }
+  .firstHalf_Hello
+  {
+    padding: 70px;
+    padding-left: 0px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .contactWrapper {
+    margin: auto;
+    height: 90vh;
+    /* border: px solid red; */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .mainContact {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .mainContact > div {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .secondContact {
+      padding-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .secondContact
+    {
+      width: 100%;
+      text-align: left;
+    }
+    .contactWrapper {
+      height: auto;
+      padding: 50px 20px;
+    }
+    .firstHalf_Hello
+    {
+      width: 100%;
+    }
+  
+    .mainContact {
+      flex-direction: column;
+    }
+  
+    .Fields_Flex {
+      align-items: center;
+    }
+  
+    .fields,
+    .fields_message {
+      width: 100%;
+    }
+  
+    .btn-enquiry,
+    .button-btn {
+      width: 100%;
+    }
+  
+    .helloHover {
+      width: 70%;
+    }
+  
+    .helloContainer:hover .helloHover {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contactWrapper {
+      padding: 30px 10px;
+    }
+  
+    .helloText {
+      font-size: 1.5rem;
+    }
+  
+    .fields,
+    .fields_message {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .btn-enquiry,
+    .button-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+   
+    .address-icon {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .underLineContact {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <div style={{width:"80px", height:"50px"}} ><img style={{width:"50px", height:"50px"}}  src='https://www.godienergy.com/img/logoshort.webp' /></div>
+        <div style={{width:"80px", height:"50px"}} ><img style={{width:"50px", height:"50px",paddingLeft:"30px"}}  src='https://www.godienergy.com/img/logoshort.webp' /></div>
       </div>
 
       <div className="footer-center">

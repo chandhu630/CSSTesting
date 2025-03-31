@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import About from "../About/About";
 
 const slides = [
   {
@@ -48,6 +49,7 @@ const Home = () => {
           ></div>
         ))}
       </div>
+      {/* <About/> */}
     </div>
   );
 };

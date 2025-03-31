@@ -1,0 +1,120 @@
+.About_FLex {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures wrapping when needed */
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+  max-width:90%;
+  margin: auto;
+}
+
+/* Left Section - Content */
+.AboutFirst_Half {
+  width: 50%;
+  min-width: 400px;  /* Prevents it from becoming too narrow */
+}
+
+/* Right Section - Image Slider */
+.AboutSecond_Half {
+  width: 50%;
+  min-width: 400px;  /* Prevents too much shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.slider-image {
+  display: none;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transition: opacity 0.5s ease;
+}
+
+.slider-image.visible {
+  display: block;
+}
+
+/* Third Image Specific Size */
+#thirdSlide {
+  width: 500px;
+  height: 200px;
+}
+
+/* Vertical Dots */
+.vertical-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 2px;
+  height: 20px;
+  background-color: gray;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: orange;
+  transform: scaleY(1.5);
+}
+
+/* =============== RESPONSIVE DESIGN =============== */
+
+/* Tablets & Smaller Screens */
+@media (max-width: 1024px) {
+  .About_FLex {
+    flex-direction: column;  /* Stacks content and image */
+    text-align: center;
+    padding: 40px;
+  }
+
+  .AboutFirst_Half,
+  .AboutSecond_Half {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .slider-container {
+    max-width: 350px;
+  }
+
+  .slider-image {
+    height: 250px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .About_FLex {
+    padding: 30px;
+  }
+
+  .AboutFirst_Half,
+  .AboutSecond_Half {
+    width: 100%;
+  }
+  #thirdSlide {
+    width: 300px;
+    height: 200px;
+  }
+
+  .slider-container {
+    max-width: 300px;
+  }
+
+  .slider-image {
+    height: 220px;
+  }
+}

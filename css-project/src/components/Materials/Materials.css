@@ -1,0 +1,193 @@
+/* Default Styles */
+.matFlex {
+    display: flex;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+
+.mat_First {
+    /* padding: 70px; */
+    width: 50%;
+    padding-bottom: 0%;
+}
+
+h4 {
+    color: var(--secondary-color);
+}
+
+.mat_Second {
+    padding: 70px;
+    width: 50%;
+    padding-left: 0px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.materialOne {
+    margin: auto;
+    text-align: center;
+}
+
+.BottomMat{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content:center;
+    background: #EAEAEA;
+}
+
+.BottomOne {
+    width: 50%;
+
+}
+
+.BottomTwo {
+    width: 50%;
+    padding: 70px;
+    padding-left: 0px;
+}
+
+
+.Entire_Mat
+{
+    background: #EAEAEA;
+    height: 100vh;
+    
+}
+
+/* --------------- Media Queries --------------- */
+
+/* For Laptops & Small Screens */
+@media (max-width: 1024px) {
+    .Entire_Mat
+{
+    background: #EAEAEA;
+}
+    .matFlex {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* .mat_First, .mat_Second {
+        width: 80%;
+        padding: 50px;
+    } */
+
+    .BottomMat {
+        flex-wrap: wrap;
+        text-align: center;
+        background: #EAEAEA;
+    }
+
+    .BottomOne, .BottomTwo {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .materialOne img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+.Material_Center
+{
+    /* border: 4px solid red; */
+}
+
+.MatBlock
+{
+    /* border: 4px solid red; */
+    width: 90%;
+    height: 90vh;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+}
+/* For Tablets (Portrait & Landscape) */
+@media (max-width: 768px) {
+    .MatBlock
+    {
+        height: auto;
+        /* width: auto; */
+    }
+    
+    .Entire_Mat
+{
+    background: #EAEAEA;
+    text-align: left;
+}
+    .matFlex {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .Bottom_img
+    {
+        width: 370px;
+    }
+
+    .mat_First, .mat_Second {
+        width: 100%;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .BottomOne, .BottomTwo {
+        width: 90%;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .materialOne img {
+        max-width: 70%;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 480px) {
+    .Entire_Mat
+{
+    background: #EAEAEA;
+    text-align: left;
+}
+    .matFlex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mat_First, .mat_Second {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .BottomMat {
+        flex-direction: column-reverse; /* Reverse the order */
+        text-align: center;
+        gap:0px;
+    }
+
+    .BottomOne, .BottomTwo {
+        width: 91%;
+        padding: 20px;
+    }
+
+    .materialOne img {
+        max-width: 90%;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
